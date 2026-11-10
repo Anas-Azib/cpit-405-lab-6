@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Like / Dislike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Lab 6: JavaScript &amp; Cookies</h1>
+        <p class="subtitle">Did you like this page? Vote and leave a comment.</p>
+
+        <!-- Like / Dislike buttons with counters -->
+        <section class="votes">
+            <button id="likeBtn" class="vote-btn" type="button">
+                <span class="icon">👍</span> Like
+                <span id="likeCount" class="count">0</span>
+            </button>
+            <button id="dislikeBtn" class="vote-btn" type="button">
+                <span class="icon">👎</span> Dislike
+                <span id="dislikeCount" class="count">0</span>
+            </button>
+        </section>
+
+        <!-- Comment input -->
+        <section class="comment-form">
+            <label for="commentInput">Leave a comment</label>
+            <div class="row">
+                <input id="commentInput" type="text" placeholder="Write your comment..." maxlength="200">
+                <button id="submitBtn" type="button">Submit</button>
+            </div>
+        </section>
+
+        <!-- Comments display -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <ul id="commentsList"></ul>
+            <p id="noComments" class="muted">No comments yet.</p>
+        </section>
+
+        <!-- Reset -->
+        <button id="resetBtn" class="reset-btn" type="button">Reset</button>
+
+        <p id="message" class="message" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
